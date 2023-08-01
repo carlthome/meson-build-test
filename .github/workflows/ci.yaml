@@ -7,6 +7,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - run: pip install meson ninja
       - run: meson setup build
       - run: meson test -C build
       - run: meson compile -C build
