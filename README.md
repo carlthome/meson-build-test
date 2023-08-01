@@ -1,6 +1,6 @@
 # meson-build-test
 
-Testing Meson for fun and learnings
+Testing Meson for fun and learnings.
 
 ## Develop
 
